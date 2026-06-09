@@ -47,12 +47,14 @@
   .timeline-role { font-size: 12px; color: var(--gold); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; font-weight: 500; }
   .timeline-desc { font-size: 14px; color: var(--gray); line-height: 1.7; }
 
-  .metgo-box { background: linear-gradient(135deg, rgba(201,168,76,0.08) 0%, rgba(201,168,76,0.03) 100%); border: 1px solid rgba(201,168,76,0.25); padding: 52px; margin: 0 0 60px; position: relative; overflow: hidden; }
-  .metgo-box::before { content: 'MetGo'; position: absolute; right: -20px; top: -30px; font-family: 'Playfair Display', serif; font-size: 120px; font-weight: 900; color: rgba(201,168,76,0.05); pointer-events: none; white-space: nowrap; }
-  .metgo-badge { display: inline-block; background: var(--gold); color: var(--navy); font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; padding: 5px 14px; margin-bottom: 24px; }
-  .metgo-title { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--white); line-height: 1.2; margin-bottom: 20px; }
-  .metgo-desc { font-size: 15px; color: rgba(245,240,232,0.75); line-height: 1.8; max-width: 640px; margin-bottom: 36px; }
-  .metgo-stats { display: flex; gap: 48px; flex-wrap: wrap; }
+  .venture-box { background: linear-gradient(135deg, rgba(201,168,76,0.08) 0%, rgba(201,168,76,0.03) 100%); border: 1px solid rgba(201,168,76,0.25); padding: 52px; margin: 0 0 60px; position: relative; overflow: hidden; }
+  .venture-box::before { content: 'MatchingGo'; position: absolute; right: -20px; top: -30px; font-family: 'Playfair Display', serif; font-size: 96px; font-weight: 900; color: rgba(201,168,76,0.05); pointer-events: none; white-space: nowrap; }
+  .venture-badge { display: inline-block; background: var(--gold); color: var(--navy); font-size: 10px; font-weight: 700; letter-spacing: 3px; text-transform: uppercase; padding: 5px 14px; margin-bottom: 24px; }
+  .venture-title { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--white); line-height: 1.2; margin-bottom: 20px; }
+  .venture-desc { font-size: 15px; color: rgba(245,240,232,0.75); line-height: 1.8; max-width: 640px; margin-bottom: 36px; }
+  .venture-stats { display: flex; gap: 48px; flex-wrap: wrap; }
+  .venture-link { display: inline-block; margin-top: 8px; font-size: 13px; font-weight: 600; letter-spacing: 1px; color: var(--gold-light); text-decoration: none; border-bottom: 1px solid rgba(201,168,76,0.4); }
+  .venture-link:hover { color: var(--gold); }
   .stat { display: flex; flex-direction: column; gap: 4px; }
   .stat-num { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 700; color: var(--gold); line-height: 1; }
   .stat-label { font-size: 11px; color: var(--gray); letter-spacing: 1px; text-transform: uppercase; }
@@ -94,7 +96,7 @@
     .hero, section { padding: 60px 28px; }
     .timeline-item { grid-template-columns: 80px 1px 1fr; gap: 0 16px; }
     .canada-grid { grid-template-columns: 1fr; }
-    .metgo-box { padding: 32px; }
+    .venture-box { padding: 32px; }
     .contact-bar { flex-direction: column; gap: 24px; text-align: center; }
     .press-item { flex-wrap: wrap; gap: 8px; }
   }
@@ -118,6 +120,7 @@
       <span class="tag">Naver EVP</span>
       <span class="tag">SKT Senior VP</span>
       <span class="tag">Samsung Card VP</span>
+      <span class="tag">MatchingGo</span>
       <span class="tag">AI · Digital · Global</span>
     </div>
   </div>
@@ -136,7 +139,7 @@
       <div class="timeline-content">
         <div class="timeline-company">Othep Networks Inc.</div>
         <div class="timeline-role">CEO · Vancouver, Canada · 디지털 AI 글로벌 사업</div>
-        <div class="timeline-desc">캐나다 법인(Othep Networks Inc.) 설립 후 AI 기반 디지털 마케팅 에이전시 운영, 글로벌 결제 인프라 구축, 한국-북미 디지털 비즈니스 브릿지 역할 수행. 캐나다 컬리지·언어학교 한국 마케팅 담당. Creator-Brand AI 매칭 플랫폼 MetGo 창업 및 론칭.</div>
+        <div class="timeline-desc">캐나다 법인(Othep Networks Inc.) 설립 후 AI 기반 디지털 글로벌 사업 전개. MatchingGo — K-뷰티·K-food 브랜드의 US TikTok 크리에이터 AI 매칭·USD 에스크로 플랫폼 개발·운영. 글로벌 결제(Stripe) 인프라, 한국-북미 디지털 비즈니스 브릿지.</div>
       </div>
     </div>
 
@@ -195,29 +198,30 @@
 
 <div class="divider"></div>
 
-<!-- MetGo -->
+<!-- MatchingGo -->
 <section>
-  <div class="section-label">Startup Venture · MetGo · 2016</div>
-  <div class="metgo-box">
-    <div class="metgo-badge">World's First · Creator-Brand AI Matching · 2016</div>
-    <div class="metgo-title">크리에이터 × 브랜드<br>AI 매칭 플랫폼</div>
-    <p class="metgo-desc">
-      알파고 쇼크로 AI가 처음 주목받던 2016년, 삼성·야후·네이버·SKT·삼성카드로 이어지는 20년 임원 경력을 집약하여 전 세계 최초로 유튜브 크리에이터와 광고 브랜드를 딥러닝 알고리즘으로 자동 매칭하는 플랫폼 MetGo를 기획·개발·론칭했다. 콘텐츠 소비자의 변화하는 니즈를 반영한 추천 알고리즘으로 크리에이터에게는 다양한 수익 모델을, 브랜드에게는 최적의 매칭 결과를 제공했다. 서울산업진흥원 공식 파트너로 선정되어 미디어 크리에이터 교육과정을 운영했다. 지금의 인플루언서 마케팅 시장을 시대보다 앞서 구현한 선구적 플랫폼.
+  <div class="section-label">Current Venture · MatchingGo · 2024 —</div>
+  <div class="venture-box">
+    <div class="venture-badge">Beta · Creator-Brand AI Matching · USD Escrow</div>
+    <div class="venture-title">크리에이터 × 브랜드<br>AI 매칭 · 에스크로 플랫폼</div>
+    <p class="venture-desc">
+      Othep Networks Inc. (Canada)가 개발·운영하는 MatchingGo는 K-뷰티·K-food 브랜드의 미국(TikTok) 진출을 위한 AI 매칭·매칭룸·USD 에스크로(Stripe Live)·US Connect 정산을 하나의 플랫폼으로 제공한다. 30년 디지털·미디어·핀테크 경험을 바탕으로, 브랜드와 US TikTok 크리에이터 간 협업을 투명하게 연결한다. 현재 베타 테스트 직전 점검 단계.
     </p>
-    <div class="metgo-stats">
+    <div class="venture-stats">
       <div class="stat">
-        <span class="stat-num">최초</span>
-        <span class="stat-label">글로벌 Creator-Brand AI 매칭</span>
+        <span class="stat-num">AI</span>
+        <span class="stat-label">MatchGraph™ 캠페인 매칭</span>
       </div>
       <div class="stat">
-        <span class="stat-num">2016</span>
-        <span class="stat-label">알파고 시대, 시대를 앞선 론칭</span>
+        <span class="stat-num">USD</span>
+        <span class="stat-label">Stripe 에스크로 · Connect</span>
       </div>
       <div class="stat">
-        <span class="stat-num">공식</span>
-        <span class="stat-label">서울산업진흥원 파트너</span>
+        <span class="stat-num">US</span>
+        <span class="stat-label">TikTok 크리에이터 타깃</span>
       </div>
     </div>
+    <a class="venture-link" href="https://matchinggo.com" target="_blank" rel="noopener">matchinggo.com →</a>
   </div>
 </section>
 
@@ -229,8 +233,8 @@
   <div class="canada-grid">
     <div class="canada-card">
       <div class="canada-card-icon">🤖</div>
-      <h3>디지털 AI 마케팅 에이전시</h3>
-      <p>캐나다 법인을 거점으로 AI 기반 디지털 마케팅 서비스 운영. 구글·페이스북 광고 운영, AI 콘텐츠 제작, 글로벌 브랜드 마케팅 전략 수립. 30년 디지털 미디어 경험과 최신 AI 기술의 결합.</p>
+      <h3>MatchingGo 플랫폼</h3>
+      <p>Othep Networks Inc. 기반 AI 인플루언서 매칭·에스크로 SaaS. K-뷰티 US TikTok 전략, Live Stripe 결제·정산. 30년 디지털 미디어·핀테크 경험과 생성형 AI·매칭 엔진의 결합.</p>
     </div>
     <div class="canada-card">
       <div class="canada-card-icon">💳</div>
@@ -241,50 +245,6 @@
       <div class="canada-card-icon">🌏</div>
       <h3>한국 ↔ 북미 디지털 브릿지</h3>
       <p>한국 대기업 임원 네트워크와 캐나다 현지 비즈니스 인프라를 동시 보유. 캐나다 컬리지·언어학교 한국 마케팅 운영 경험. 한국 콘텐츠·서비스의 북미 진출을 연결하는 독보적 포지션.</p>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
-<!-- Press -->
-<section>
-  <div class="section-label">Media Coverage</div>
-  <div class="press-list">
-    <div class="press-item">
-      <span class="press-outlet">한국경제</span>
-      <a class="press-title" href="https://www.hankyung.com/article/2008092471961" target="_blank">IT업계서 주목받는 야후코리아 출신들 — SKT 남기영 상무 주요 인물 언급</a>
-      <span class="press-year">2008</span>
-    </div>
-    <div class="press-item">
-      <span class="press-outlet">조선비즈</span>
-      <a class="press-title" href="https://biz.chosun.com/site/data/html_dir/2016/09/01/2016090101898.html" target="_blank">MetGo 크리에이터·브랜드 AI 매칭 플랫폼 론칭</a>
-      <span class="press-year">2016</span>
-    </div>
-    <div class="press-item">
-      <span class="press-outlet">동아일보</span>
-      <a class="press-title" href="https://www.donga.com/news/article/all/20160809/79652686/1" target="_blank">MetGo AI 매칭 플랫폼 서비스 론칭 보도</a>
-      <span class="press-year">2016</span>
-    </div>
-    <div class="press-item">
-      <span class="press-outlet">헤럴드경제</span>
-      <a class="press-title" href="https://biz.heraldcorp.com/article/1037800" target="_blank">서울산업진흥원 미디어 크리에이터 챌린지 — MetGo 공식 파트너 및 남기영 대표 강사 참여</a>
-      <span class="press-year">2016</span>
-    </div>
-    <div class="press-item">
-      <span class="press-outlet">매일경제</span>
-      <a class="press-title" href="https://www.mk.co.kr/news/culture/7830551" target="_blank">크리에이터 이코노미 · MetGo 플랫폼 관련 보도</a>
-      <span class="press-year">2017</span>
-    </div>
-    <div class="press-item">
-      <span class="press-outlet">한국경제</span>
-      <a class="press-title" href="https://www.hankyung.com/article/2017060939871" target="_blank">MetGo · 크리에이터 매칭 사업 관련 보도</a>
-      <span class="press-year">2017</span>
-    </div>
-    <div class="press-item">
-      <span class="press-outlet">아시아경제</span>
-      <a class="press-title" href="https://view.asiae.co.kr/news/view.htm?idxno=2017052215102925900" target="_blank">MetGo · 디지털 크리에이터 플랫폼 관련 보도</a>
-      <span class="press-year">2017</span>
     </div>
   </div>
 </section>
@@ -303,8 +263,8 @@
 <div class="contact-bar">
   <div class="name-mark">RKN</div>
   <div class="contact-links">
-    <a href="https://www.linkedin.com/in/richard-kiyoung-nam-7403a14a/" target="_blank">LinkedIn</a>
-    <a href="https://search.naver.com/search.naver?where=nexearch&sm=tab_etc&mra=bjky&pkid=1&os=139491&qvt=0&query=%EB%82%A8%EA%B8%B0%EC%98%81" target="_blank">Naver 인물정보</a>
+    <a href="https://matchinggo.com" target="_blank" rel="noopener">MatchingGo</a>
+    <a href="https://www.linkedin.com/in/richard-kiyoung-nam-7403a14a/" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </div>
 
