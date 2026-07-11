@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Richard Kiyoung Nam — Executive Profile</title>
+<title>Richard Nam(남기영) — Executive Profile</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -79,9 +79,16 @@
   .vision-quote::before { content: '\201C'; color: var(--gold); font-size: 80px; line-height: 0; vertical-align: -0.35em; margin-right: 8px; opacity: 0.5; }
   .vision-sub { font-size: 13px; color: var(--gray); letter-spacing: 2px; text-transform: uppercase; position: relative; z-index: 1; }
 
-  .contact-bar { border-top: 1px solid rgba(255,255,255,0.06); padding: 48px 60px; display: flex; justify-content: space-between; align-items: center; }
+  .contact-bar { border-top: 1px solid rgba(255,255,255,0.06); padding: 48px 60px; display: flex; justify-content: center; align-items: center; }
   .contact-bar .name-mark { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold); font-weight: 700; }
-  .contact-links { display: flex; gap: 32px; }
+  .contact-links { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; }
+  .contact-btn {
+    display: inline-flex; align-items: center; justify-content: center;
+    padding: 12px 24px; border: 1px solid rgba(201,168,76,0.45);
+    color: var(--gold-light); font-size: 12px; font-weight: 600;
+    letter-spacing: 1px; text-decoration: none; transition: all 0.2s;
+  }
+  .contact-btn:hover { background: rgba(201,168,76,0.12); color: var(--gold); border-color: var(--gold); }
   .contact-links a { font-size: 12px; color: var(--gray); text-decoration: none; letter-spacing: 1px; transition: color 0.2s; }
   .contact-links a:hover { color: var(--gold); }
 
@@ -108,7 +115,7 @@
 <div class="hero">
   <div class="hero-inner">
     <div class="eyebrow">30 Years · Digital · Global · AI</div>
-    <h1>Richard<span>Kiyoung Nam</span></h1>
+    <h1>Richard Nam<span>(남기영)</span></h1>
     <p class="hero-sub">
       삼성영상사업단을 시작으로 야후코리아, 네이버, SK텔레콤, 삼성카드까지
       한국 디지털·미디어·핀테크 산업의 핵심을 관통한 30년 경력.
@@ -137,8 +144,8 @@
       <div class="timeline-year">2014 — Present</div>
       <div class="timeline-line"></div>
       <div class="timeline-content">
-        <div class="timeline-company">Othep Networks Inc.</div>
-        <div class="timeline-role">CEO · Vancouver, Canada · 디지털 AI 글로벌 사업</div>
+        <div class="timeline-company">Othep Networks</div>
+        <div class="timeline-role">CEO · Canada, Korea</div>
         <div class="timeline-desc">캐나다 법인(Othep Networks Inc.) 설립 후 AI 기반 디지털 글로벌 사업 전개. MatchingGo — 글로벌 브랜드와 크리에이터를 AI로 연결하는 협업 매칭·에스크로 플랫폼 개발·운영. MatchGraph™ 적합도 매칭, Stripe 기반 안전 정산, 한국-북미 디지털 비즈니스 브릿지.</div>
       </div>
     </div>
@@ -200,12 +207,12 @@
 
 <!-- MatchingGo -->
 <section>
-  <div class="section-label">Current Venture · MatchingGo · 2024 —</div>
+  <div class="section-label">Current · MatchingGo · 2024 —</div>
   <div class="venture-box">
-    <div class="venture-badge">Beta · Creator-Brand AI Matching · USD Escrow</div>
+    <div class="venture-badge">Creator-Brand AI Matching · USD Escrow</div>
     <div class="venture-title">크리에이터 × 브랜드<br>AI 매칭 · 에스크로 플랫폼</div>
     <p class="venture-desc">
-      Othep Networks Inc. (Canada)가 개발·운영하는 MatchingGo는 글로벌 브랜드와 크리에이터 간 AI 매칭·1:1 협업 제안·USD 에스크로(Stripe)·정산을 하나의 플랫폼으로 제공한다. 30년 디지털·미디어·핀테크 경험을 바탕으로, 브랜드와 크리에이터의 협업을 투명하게 연결한다. 현재 베타 운영 단계.
+      Othep Networks (캐나다, 한국)가 개발·운영하는 MatchingGo는 글로벌 브랜드와 크리에이터 간 AI 매칭·1:1 협업 제안·USD 에스크로(Stripe)·정산을 하나의 플랫폼으로 제공한다. 30년 디지털·미디어·핀테크 경험을 바탕으로, 브랜드와 크리에이터의 협업을 투명하게 연결한다.
     </p>
     <div class="venture-stats">
       <div class="stat">
@@ -227,44 +234,18 @@
 
 <div class="divider"></div>
 
-<!-- Canada -->
-<section>
-  <div class="section-label">Canada Base · Global Operations</div>
-  <div class="canada-grid">
-    <div class="canada-card">
-      <div class="canada-card-icon">🤖</div>
-      <h3>MatchingGo 플랫폼</h3>
-      <p>Othep Networks Inc. 기반 AI 브랜드·크리에이터 매칭·에스크로 SaaS. MatchGraph™ 적합도 매칭, Stripe 결제·정산. 30년 디지털 미디어·핀테크 경험과 생성형 AI·매칭 엔진의 결합.</p>
-    </div>
-    <div class="canada-card">
-      <div class="canada-card-icon">💳</div>
-      <h3>글로벌 결제 인프라 구축</h3>
-      <p>캐나다 법인 기반 Shopify Payments 완전 활성화. Apple Pay, Google Pay, 다통화(CAD/USD) 결제 환경 운영. 한국 사업자가 접근하기 어려운 글로벌 금융 결제망 보유.</p>
-    </div>
-    <div class="canada-card">
-      <div class="canada-card-icon">🌏</div>
-      <h3>한국 ↔ 북미 디지털 브릿지</h3>
-      <p>한국 대기업 임원 네트워크와 캐나다 현지 비즈니스 인프라를 동시 보유. 캐나다 컬리지·언어학교 한국 마케팅 운영 경험. 한국 콘텐츠·서비스의 북미 진출을 연결하는 독보적 포지션.</p>
-    </div>
-  </div>
-</section>
-
-<div class="divider"></div>
-
 <!-- Vision -->
 <div class="vision-block">
   <p class="vision-quote">
-    삼성에서 시작해 야후, 네이버, SKT, 삼성카드까지 30년간 한국 디지털 산업의 최전선을 누볐다. 지금은 캐나다라는 글로벌 거점과 AI라는 새로운 무기로, 다음 챕터를 쓰고 있다.
+    삼성에서 시작해서 야후, 네이버, SKT, 삼성카드까지 회사 경험과 글로벌 플랫폼 창업을 통한 30년간 디지털 산업의 최전선을 누볐다. 지금은 캐나다와 한국을 거점으로 AI라는 새로운 무기로, 다음 챕터를 쓰고 있다.
   </p>
-  <p class="vision-sub">Richard Kiyoung Nam · Vancouver · Seoul · 2026</p>
 </div>
 
 <!-- Contact -->
 <div class="contact-bar">
-  <div class="name-mark">RKN</div>
   <div class="contact-links">
-    <a href="https://matchinggo.com" target="_blank" rel="noopener">MatchingGo</a>
-    <a href="https://www.linkedin.com/in/richard-kiyoung-nam-7403a14a/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="contact-btn" href="https://matchinggo.com" target="_blank" rel="noopener">MatchingGo</a>
+    <a class="contact-btn" href="https://www.linkedin.com/in/richard-kiyoung-nam-7403a14a/" target="_blank" rel="noopener">LinkedIn</a>
   </div>
 </div>
 
