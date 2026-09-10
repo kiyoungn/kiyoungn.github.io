@@ -1,0 +1,57 @@
+# --- Secrets & credentials (never publish) ---
+.env
+.env.*
+!.env.example
+!.secret-blocklist.example
+.secret-blocklist
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_rsa.pub
+id_dsa
+id_ecdsa
+id_ed25519
+*.kdbx
+*.ovpn
+*.rdp
+credentials.json
+client_secret*.json
+service-account*.json
+*-service-account.json
+token.json
+*.keystore
+auth.json
+secrets.yaml
+secrets.yml
+secrets.json
+
+# Local-only personal / private dumps
+private/
+secrets/
+.secrets/
+*.secret
+*.credentials
+
+# --- Agent / editor local state ---
+.cursor/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- OS / junk ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Dependencies / build (if added later) ---
+node_modules/
+dist/
+.cache/
+__pycache__/
+*.pyc
+.venv/
+venv/
