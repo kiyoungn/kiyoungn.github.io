@@ -1,6 +1,6 @@
 # kiyoungn.github.io
 
-Executive profile — current venture: **MatchingGo** (Othep Networks Inc., Canada).
+Executive profile — Richard Nam (Othep Networks Inc., Canada).
 
 This is a **public** GitHub Pages site. Anything committed here is published.
 
@@ -13,4 +13,4 @@ Never commit secrets, private mailboxes, phone numbers, addresses, API keys, or 
 - Enable hooks once: `bash scripts/install-hooks.sh`
 - Manual scan: `bash scripts/check-secrets.sh all`
 
-Allowed public contact on this site: MatchingGo, LinkedIn, Naver people profile — not personal Gmail.
+Allowed public contact on this site: LinkedIn, Naver people profile — not personal Gmail.
